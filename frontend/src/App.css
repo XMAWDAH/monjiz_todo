@@ -1,0 +1,139 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f0ff;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.iconButton {
+  transition: all 0.2s !important;
+}
+.iconButton:hover {
+  background-color: #f6efff !important ;
+}
+.iconButton:focus,
+.iconButton:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.todoCard {
+  transition: all 0.2s !important;
+}
+.todoCard:hover {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  box-shadow: 0px 7px 7px rgba(95, 46, 132, 0.4);
+}
+
+/* fonts */
+@font-face {
+  font-family: Cairo;
+  src: url("../public/fonts/Cairo-Medium.ttf");
+}
+
+.fc {
+  background: #ffffff;
+}
+.fc .fc-button-group {
+  gap: 10px;
+  background: transparent !important;
+}
+.fc .fc-button-primary {
+  background-color: #615184 !important;
+  border: none !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding: 8px 16px !important;
+  border-radius: px !important;
+  transition: all 0.2s ease;
+}
+.fc .fc-button-primary:hover {
+  background-color: #4a3e65 !important;
+}
+.fc .fc-toolbar-title {
+  color: #615184;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.fc-theme-standard th {
+  background-color: #e8e0f1 !important;
+  padding: 20px 0 !important;
+  border: none !important;
+  border-radius: 4px !important;
+}
+.fc .fc-col-header-cell-cushion {
+  color: #615184 !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+.fc td {
+  border-color: #f0f0f0 !important;
+}
+.fc-event {
+  border-radius: 4px !important;
+  padding: 6px 12px !important;
+  font-size: 0.85rem !important;
+  border: none !important;
+  margin-top: 2px !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+.fc .fc-daygrid-day-frame {
+  min-height: 120px !important;
+}
+.fc .fc-day-today {
+  background: #f4f1ff !important;
+  border-radius: 8px;
+}
+.fc .fc-scrollgrid {
+  border: none !important;
+}
